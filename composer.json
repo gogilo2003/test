@@ -1,0 +1,22 @@
+{
+    "name": "gogilo/test",
+    "description": "A brief laravel package develpment",
+    "autoload": {
+        "psr-4": {
+            "Test\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Gogilo\\Test\\ServiceProvider"
+            ],
+            "aliases": {
+                "Debugbar": "Gogilo\\Test\\Facade"
+            }
+        }
+    },
+    "require": {
+        "illuminate/support": "^10.14"
+    }
+}
